@@ -1,0 +1,10 @@
+{
+    "id": "ai-flashcards",
+    "name": "AI Learning Assistant",
+    "version": "2.0.0",
+    "minAppVersion": "0.15.0",
+    "description": "Generate flashcards and summaries from your notes using AI (OpenRouter).",
+    "author": "Just8it",
+    "authorUrl": "",
+    "isDesktopOnly": false
+}

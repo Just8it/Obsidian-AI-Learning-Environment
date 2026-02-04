@@ -1,0 +1,26 @@
+# node_modules
+node_modules/
+
+# Obsidian plugin data (contains API keys)
+data.json
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Origin tracking (internal only)
+ORIGIN.md
+
+# Master file (internal notes)
+master.md

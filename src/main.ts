@@ -251,7 +251,7 @@ export default class AILearningAssistant extends Plugin {
         const content = this.getContent();
         if (!content) { new Notice("No active markdown note."); return; }
         if (content.text.trim().length < 50) { new Notice("⚠️ Content too short."); return; }
-        if (!this.getProvider()) { return; }
+
 
         const usedModel = options.model || this.settings.model;
         const contextLimit = this.settings.modelContextLengths?.[usedModel] || 128000;
@@ -402,7 +402,7 @@ Output ONLY raw cards using the MANDATORY FORMAT above.`;
         const content = this.getContent();
         if (!content) { new Notice("No active markdown note."); return; }
         if (content.text.trim().length < 50) { new Notice("⚠️ Content too short."); return; }
-        if (!this.getProvider()) { return; }
+
 
         const usedModel = options.model || this.settings.model;
         const contextLimit = this.settings.modelContextLengths?.[usedModel] || 128000;
@@ -477,7 +477,7 @@ Output ONLY raw cards using the MANDATORY FORMAT above.`;
         const content = this.getContent();
         if (!content) { new Notice("No active markdown note."); return; }
         if (content.text.trim().length < 50) { new Notice("⚠️ Content too short."); return; }
-        if (!this.getProvider()) { return; }
+
 
         this.setStatus("Preparing...");
 

@@ -149,12 +149,22 @@ export default class AILearningAssistant extends Plugin {
 
     async fetchWithRetry(requestBody: any, retries = 5, delay = 5000): Promise<any> {
         const provider = this.getProvider();
-        let apiKey = provider ? provider.getApiKey() : null;
 
-        if (!apiKey) {
-            apiKey = this.settings.apiKey;
+        // Use Provider if available
+        if (provider) {
+            try {
+                this.setStatus("API call (Provider)...");
+                const response = await provider.fetchWithRetry(requestBody, retries, delay);
+                this.clearStatus();
+                return response;
+            } catch (error: any) {
+                this.setStatus("API Error");
+                throw error;
+            }
         }
 
+        // Fallback: Standalone Mode
+        const apiKey = this.settings.apiKey;
         if (!apiKey) {
             throw new Error("API Key not found. Please enable OpenRouter Provider OR set a key in settings.");
         }

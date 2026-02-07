@@ -457,17 +457,17 @@
 /* ==================== SETTINGS PAGE ==================== */
 
 .ai-learning-settings {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .ai-settings-balance {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 12px;
+    padding: 6px 10px;
     background: var(--background-secondary);
     border-radius: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     color: var(--text-success);
     font-weight: 500;
 }
@@ -480,31 +480,31 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 10px 12px;
+    padding: 8px 10px;
     background: rgba(var(--color-orange-rgb), 0.1);
     color: var(--text-warning);
     border-radius: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font-size: 0.9em;
 }
 
 /* --- Sections --- */
 .ai-settings-section {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     background: var(--background-primary);
     border: 1px solid var(--background-modifier-border);
-    border-radius: 8px;
+    border-radius: 6px;
     overflow: hidden;
 }
 
 .ai-settings-section-header {
     display: flex;
     align-items: center;
-    padding: 12px 16px;
+    padding: 10px 14px;
     background: var(--background-secondary);
     border-bottom: 1px solid var(--background-modifier-border);
     font-weight: 600;
-    font-size: 0.95em;
+    font-size: 0.9em;
     color: var(--text-normal);
 }
 
@@ -521,7 +521,7 @@
 .ai-settings-section-icon {
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 8px;
     opacity: 0.7;
 }
 
@@ -536,7 +536,7 @@
 }
 
 .ai-settings-section-content {
-    padding: 16px;
+    padding: 12px;
 }
 
 /* --- Collapsible Logic --- */
@@ -553,7 +553,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 0;
+    padding: 6px 0;
     border-bottom: 1px solid var(--background-modifier-border);
 }
 
@@ -587,7 +587,7 @@
 
 .ai-settings-input {
     width: 120px;
-    padding: 4px 8px;
+    padding: 2px 6px;
     border-radius: 4px;
     border: 1px solid var(--background-modifier-border);
     background: var(--background-modifier-form-field);
@@ -596,8 +596,8 @@
 
 /* --- Prompts Editor --- */
 .ai-prompt-level {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
     border-bottom: 1px solid var(--background-modifier-border);
 }
 
@@ -609,12 +609,12 @@
 
 .ai-prompt-level-title {
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: var(--text-accent);
 }
 
 .ai-settings-btn-container {
-    margin-top: 20px;
+    margin-top: 16px;
     display: flex;
     justify-content: flex-end;
 }

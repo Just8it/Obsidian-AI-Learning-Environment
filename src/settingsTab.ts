@@ -37,7 +37,7 @@ export class AILearningSettingTab extends PluginSettingTab {
             });
 
             // Provider section
-            this.createSection(containerEl, 'Provider', 'plug', () => {
+            this.createCollapsibleSection(containerEl, 'Provider', 'plug', true, () => {
                 const content = containerEl.createDiv({ cls: 'ai-settings-section-content' });
 
                 const row = content.createDiv({ cls: 'ai-settings-row' });
@@ -74,7 +74,7 @@ export class AILearningSettingTab extends PluginSettingTab {
         }
 
         // ===== MODEL SELECTION =====
-        this.createSection(containerEl, 'Model', 'cpu', () => {
+        this.createCollapsibleSection(containerEl, 'Model', 'cpu', true, () => {
             const content = containerEl.createDiv({ cls: 'ai-settings-section-content' });
 
             const row = content.createDiv({ cls: 'ai-settings-row' });
@@ -113,7 +113,7 @@ export class AILearningSettingTab extends PluginSettingTab {
         });
 
         // ===== DEFAULTS =====
-        this.createSection(containerEl, 'Defaults', 'settings', () => {
+        this.createCollapsibleSection(containerEl, 'Defaults', 'settings', true, () => {
             const content = containerEl.createDiv({ cls: 'ai-settings-section-content' });
 
             // Detail Level
